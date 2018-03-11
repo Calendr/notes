@@ -1,0 +1,1 @@
+provider在注册服务的过程,跟consumer注册过程相似,也是通过一个ServiceBean调用到ServiceConfig.在通过AbstractInterfaceConfig获取监控中心,接着通过相应的Protocol.export 暴露远程服务,同时也会向注册中心订阅.最终会为每一个服务单独起一个Exchangers监听相应的管道消息。
